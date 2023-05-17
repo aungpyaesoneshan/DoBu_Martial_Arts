@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobu Martial Arts</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo.png" alt=""><a href=""></a>
+        </div>
+        <div class="nav_menu">
+            <ul>
+                <li><a class="link" href="#" data-target="home">Home</a></li>
+                <li><a class="link" href="#" data-target="instructors">Intructors</a></li>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Classes
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item link" href="#" data-target="judo">Judo</a></li>
+                      <li><a class="dropdown-item link" href="#" data-target="karate">Krate</a></li>
+                      <li><a class="dropdown-item link" href="#" data-target="jiujitsu">Jiu Jitsu</a></li>
+                      <li><a class="dropdown-item link" href="#" data-target="mwaythai">Muay Thai</a></li>
+                    </ul>
+                  </div>
+                <li><a class="link" href="#" data-target="aboutus">About Us</a></li>
+                <li><a class="link" href="#" data-target="contactus">Contact Us</a></li>
+                <li><a class="link" href="#" data-target="registration-form">Register</a></li>
+            </ul>
+        </div>
+            <div class="input-group w-25 register_search">
+                <input type="text" class="form-control" placeholder="">
+                <button class="btn btn-light" type="submit">Search</button>
+              </div>
+    </header>
+    <main>
+        <!-- Main -->
+       <div class="home_div content" id="home">
+        <div class="carousel_container">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <!-- <ol class="carousel-indicators">
+                  <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol> -->
+              
+                <!-- Slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/image1.jpg" alt="Image 1">
+                    <div class="carousel-caption">
+                      <h1><em><i>Stay Strong</i></em> </h1>
+                      <!-- <p>Description for Slide 1</p> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/image2.jpg" alt="Image 2">
+                    <div class="carousel-caption">
+                      <h1><em><i>Stay Healthy</i></em> </h1>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/image3.jpg" alt="Image 3">
+                    <div class="carousel-caption">
+                      <h1><em><i>Stay Energetic</i></em> </h1>
+
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>      
+        </div>
+       </div>
+       <!-- Classes -->
+      
+        <div class="classes_div" id="classes">
+          <!-- Judo -->
+          <div class="judo content" id="judo">
+              <img src="Images/classes/judo.jpg" alt="">
+              <p>Judo is a modern martial art and combat sport that originated in Japan in the late 19th century. It was founded by Jigoro Kano, who developed it as a system of physical, mental, and moral education.
+              </p>
+              <a class="flame-link link" href="#" data-target="timetable">Class Time Table</a>
+              <a class="flame-link link" href="#" data-target="memberoptions">Prices and Membership Options</a>
+          </div>
+          <!-- Karate -->
+          <div class="karate content" id="karate">
+              <img src="Images/classes/karate.webp" alt="">
+              <p>Karate is a traditional Japanese martial art that originated in the Ryukyu Kingdom (now Okinawa, Japan) and later spread to various parts of the world. It is a striking-based martial art that primarily focuses on punches, kicks, knee strikes, elbow strikes, and open-hand techniques.</p>
+              <a class="flame-link link" href="#" data-target="timetable">Class Time Table</a>
+              <a class="flame-link link" href="#" data-target="memberoptions">Prices and Membership Options</a>
+          </div>
+          <!-- Jiu Jitsu -->
+          <div class="jiu_jitsu content" id="jiujitsu">
+              <img src="Images/classes/jiu-jitsu.jpg" alt="">
+              <p>Jiu-Jitsu, also known as Jujutsu or Ju-Jitsu, is a traditional Japanese martial art that focuses on close combat and self-defense techniques.</p>
+              <a class="flame-link link" href="#" data-target="timetable">Class Time Table</a>
+              <a class="flame-link link" href="#" data-target="memberoptions">Prices and Membership Options</a>
+          </div>
+          <!-- Mway Thai -->
+          <div class="mway_thai content" id="mwaythai">
+              <img src="Images/classes/mway-thai.jpeg" alt="">
+              <p>Muay Thai, also known as "The Art of Eight Limbs," is a martial art and combat sport that originated in Thailand. It is a highly physical and intense fighting style that utilizes punches, kicks, knees, elbows, and clinching techniques.</p>
+              <a class="flame-link link" href="#" data-target="timetable">Class Time Table</a>
+              <a class="flame-link link" href="#" data-target="memberoptions">Prices and Membership Options</a>
+          </div>
+          <!-- Martial arts timetable -->
+          <div class="timetable">
+              
+          </div>
+          <!-- Prices and member options -->
+          <div class="member_options">
+  
+          </div>
+         </div>
+       
+       
+       <!-- Instructors -->
+       <div class="instructors_div_container content" id="instructors">
+        <div class=" instructors_div " >
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/instructors/i1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/instructors/i2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/instructors/i3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/instructors/i4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/instructors/i5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div> 
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/instructors/i6.webp" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+         </div>
+       </div>
+       <!-- About Us -->
+       <div class="aboutus_div content" id="aboutus">
+        <img src="Images/About Us/aboutus.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laboriosam minima reprehenderit praesentium, dolores atque ducimus quis voluptatum, fugiat molestiae explicabo eligendi deleniti. Aut tempore doloremque, minus exercitationem sequi asperiores.</p>
+       </div>
+       <!-- Contact Us -->
+       <div class="contactus_div_container content " id="contactus">
+        <div class="contactus_div" >
+          <div class="map-div">
+          <h2>Our Location</h2>
+          <iframe class="map_api" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15275.32250238046!2d96.1332093!3d16.8347566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1930000000021%3A0xf0971622cc91af73!2sLithan%20Myanmar!5e0!3m2!1smy!2smm!4v1684145557161!5m2!1smy!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Feel free to reach out to us for any inquiries or questions. We're here to help!</p>
+          <ul>
+            <li><strong>Phone:</strong> +1-123-456-7890</li>
+            <li><strong>Email:</strong> info@example.com</li>
+            <li><strong>Address:</strong> 123 Main Street, City, State, ZIP</li>
+          </ul>  
+        </div>
+          <form class="needs-validation contactus_form" novalidate>
+              <h2>Contact Us</h2>
+              <div class="form-row">
+                <div class="col-md-4 mb-3 w-100">
+                  <label for="validationCustom01">Name:</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3 w-100">
+                  <label for="telInput" class="form-label">Telephone Number:</label>
+                  <input type="tel" class="form-control" id="telInput" placeholder="09**********" required>
+                  <div class="invalid-feedback">
+                    Please enter a valid telephone number.
+                  </div>
+                </div>
+                <div class="col-md-4 form-group w-100">
+                  <label for="exampleInputEmail1">Email address:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+              </div>
+              <button class="btn btn-primary contactus-btn" type="submit">Submit form</button>
+            </form>
+      </div>
+       </div>
+    <!-- Privacy and Policy -->
+    <div class="privacy_div content" id="privacy">
+        <h2>Privacy and Policy</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores aliquam quidem laboriosam, ipsa ab laudantium aut consequatur praesentium deleniti numquam eius possimus quae doloribus iure sit fugiat magni placeat!</p>
+       
+    </div>
+    <!-- Time Table -->
+    <div class="time_table content" id="timetable">
+      <h2>Martial arts class timetable</h2>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">06:00-07:30</th>
+            <td>Jiu-Jitsu</td>
+            <td>Karate</td>
+            <td>Judo</td>
+            <td>Jiu-Jitsu</td>
+            <td>Muay Thai</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">8:00-10:00</th>
+            <td>Muay Thai</td>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+            <td>Jiu-Jitsu</td>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+          </tr>
+          <tr>
+            <th scope="row">10:30-12:00</th>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+            <td>Private Tution</td>
+            <td>Judo</td>
+            <td>Karate</td>
+          </tr>
+          <tr>
+            <th scope="row">13:00-14:30</th>
+            <td>Open mat/ Personal pratice</td>
+            <td>Open mat/ Personal pratice</td>
+            <td>Open mat/ Personal pratice</td>
+            <td>Open mat/ Personal pratice</td>
+            <td>Open mat/ Personal pratice</td>
+            <td>Karate</td>
+            <td>Judo</td>
+          </tr> 
+          <tr>
+            <th scope="row">15:00-17:00</th>
+            <td>Kids jiu-jitsu</td>
+            <td>Kids judo</td>
+            <td>Kids karate</td>
+            <td>Kids jiu-jitsu</td>
+            <td>Kids judo</td>
+            <td>Muay Thai</td>
+            <td>Jiu-jitsu</td>
+          </tr>
+          <tr>
+            <th scope="row">17:30-19:00</th>
+            <td>Karate</td>
+            <td>Muay Thai</td>
+            <td>Judo</td>
+            <td>Jiu-jitsu</td>
+            <td>Muay Thai</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">19:00-21:00</th>
+            <td>Jiu-jitsu</td>
+            <td>Judo</td>
+            <td>Jiu-jitsu</td>
+            <td>Karate</td>
+            <td>Private tution</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Prices and member options -->
+    <div class="member_options content" id="memberoptions">
+      <h2>Prices and membership options</h2>
+      <table class="table table-dark">
+        <tbody>
+          <tr>
+            <td>Basic (1 martial art - 2 sessions per wekk) - monthly fee</td>
+            <td>£25.00</td>
+          </tr>
+          <tr>
+            <td>Intermediate (1 martial art - 3 sessions per week) - monthly fee</td>
+            <td>£35.00</td>
+            
+          </tr>
+          <tr>
+           
+            <td>Advanced (any 2 martial arts - 5 sessions per week) - monthly fee</td>
+            <td>£45.00</td>
+          </tr>
+          <tr>
+           
+            <td>Elite (Unlimited classes)</td>
+            <td>£60.00</td>
+          </tr>
+          <tr>
+           
+            <td>Private martial arts tuition - per hour</td>
+            <td>£15.00</td>
+          </tr><tr>
+           
+            <td>Junior membership - can attend all-kids martial arts sessions</td>
+            <td>£25.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Specialist courses and fitness training</h2>
+      <table class="table table-dark">
+        <tbody>
+          <tr>
+            <td>Six-week beginners' self-defence course (2 x 1-hour session per week)</td>
+            <td>£180.00</td>
+          </tr>
+          <tr>
+            <td>Use of fitness room - per visit</td>
+            <td>£6.00</td>
+            
+          </tr>
+          <tr>
+           
+            <td>Personal fitness training - per hour</td>
+            <td>£35.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Site Map -->
+    <div class="site_map content" id="sitemap" >
+      <h2>Site Map</h2>
+      <div class="sitemap_links_container ">
+        <a class="link" href="#" data-target="home">Home</a>
+        <a class="link" href="#" data-target="instructors">Intructors</a>
+        <a class="link" href="#" data-target="judo">Judo</a>
+        <a class="link" href="#" data-target="karate">Krate</a>
+        <a class="link" href="#" data-target="jiujitsu">Jiu Jitsu</a>
+        <a class="link" href="#" data-target="mwaythai">Muay Thai</a>
+        <a class="link" href="#" data-target="sitemap">Site Map</a>
+        <a class="link" href="#" data-target="privacy">Privacy and Policy</a>
+        <a class="link" href="#" data-target="aboutus">About Us</a>
+        <a class="link" href="#" data-target="contactus">Contact Us</a>
+        <a class="link" href="#" data-target="registration-form">Register</a>
+        <a class=" link" href="#" data-target="timetable">Class Time Table</a>
+        <a class=" link" href="#" data-target="memberoptions">Prices and Membership Options</a>
+      </div>
+    </div>
+    <!-- Register page -->
+   
+         <!-- Register Form -->
+      <form id="registration-form" class="content">
+        <h2>Registration Form</h2>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+        <div>
+          <label for="class">Class:</label>
+          <select id="class" name="class" required>
+            <option value="">Select Class</option>
+            <option value="Judo">Judo</option>
+            <option value="Karate">Karate</option>
+            <option value="Jiu-Jitsu">Jiu-Jitsu</option>
+            <option value="Muay Thai">Muay Thai</option>
+
+          </select>
+        </div>
+        <div>
+          <input class="submit-btn" type="submit" value="Register">
+        </div>
+      </form>
+      <!-- Thank you page -->
+      <div class="thankyou content" id="thankyou">
+        <h2>Thank You!</h2>
+        <p>Thank you for your submission.</p>
+      </div>
+    </main>
+    <footer>
+        <div class="social_links">
+            <a href="#"><img src="node_modules/bootstrap-icons/icons/facebook.svg" alt=""></a>
+            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitter.svg" alt=""></a>
+            <a href="#"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt=""></a>
+        </div>
+        <div class="sitemap_policy">
+            <a class="link" href="#" data-target="sitemap">Site Map</a>
+            <a class="link" href="#" data-target="privacy">Privacy and Policy</a>
+            
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

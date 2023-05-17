@@ -1,0 +1,53 @@
+body{
+  background-color: rgb(9, 2, 37);
+  color: white;
+}
+/* form */
+#registration-form{
+  width: 200px;
+  margin: auto;
+}
+#registration-form input,#registration-form textarea,#registration-form select{
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+form select{
+  width: 257px;
+  height: 38px;
+}
+#register-btn,#update-btn,.edit,.delete{
+  width: 100px;
+  height: 40px;
+  margin: 20px 0;
+  color: rgb(4, 6, 35);
+  font-weight: bolder;
+  border-radius: 5px;
+}
+#update-btn{
+  background-color: rgb(2, 196, 2);
+}
+.edit{
+background-color:yellow;
+margin-right: 15px;
+}
+.delete{
+  background-color: red;
+}
+.submit-btn:hover,.edit:hover,.delete:hover{
+  transform: scale(1.1);
+}
+/* table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #1f918f;
+  }

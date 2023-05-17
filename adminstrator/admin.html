@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminstrator Page</title>
+    <link rel="stylesheet" href="styleForAdmin.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scriptForAdmin.js"></script>
+</head>
+<body>
+  <div id="registration-form">
+    <h2>Local Storage CRUD APP</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+    </div>
+    <div>
+      <label for="class">Class:</label>
+      <select id="class" name="class" required>
+        <option value="">Select Class</option>
+        <option value="Judo">Judo</option>
+        <option value="Karate">Karate</option>
+        <option value="Jiu-Jitsu">Jiu-Jitsu</option>
+        <option value="Muay Thai">Muay Thai</option>
+
+      </select>
+    </div>
+    <div>
+      <!-- <button id="register-btn" onclick="createData()">Register</button> -->
+      <button id="update-btn" onclick="createData()">Update</button>
+    </div>
+  </div>
+  <br>
+    <div id="data-display">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Phone</th>
+              <th>Address</th>
+              <th>Class</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Existing rows will be added here -->
+          </tbody>
+        </table>
+      </div>
+      
+  
+</body>
+</html>
