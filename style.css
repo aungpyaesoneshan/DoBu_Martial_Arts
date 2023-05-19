@@ -35,14 +35,60 @@ header{
 .dropdown{
     display: inline;
 }
-/* .dropdown:hover .dropdown-menu{
-    display: block;
-} */
+
 /* register and search div */
-.register_search{
-   
+.register_search {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 20px;
     margin-right: 20px;
-}
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 8px 12px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #e6e6e6;
+  }
+
+  /* drop items */
+  .ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .ui-autocomplete li {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .ui-autocomplete li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .ui-autocomplete li.ui-state-active {
+    background-color: #e6e6e6;
+  }
+  
 
 /* Main div */
 main{
@@ -60,9 +106,7 @@ main{
     height: 700px;
 }
 /* ----------------------Instructors div-------------- */
-.instructors_div_container{
-    /* height: 95%; */
-}
+
 .instructors_div{
     width: 1000px;
     height: 450px;
@@ -170,18 +214,14 @@ main{
     text-decoration: underline;
 }
 /* ---------------Time Table--------------- */
-.time_table{
-    /* display: none; */
-}
+
 .time_table h2{
     margin: 100px 0 50px 0;
     text-align: center;
     text-decoration: underline;
 }
 /* ----------------Prices and membership options--------- */
-.member_options{
-    /* display: none; */
-}
+
 .member_options h2{
     text-align: center;
     text-decoration: underline;
@@ -202,37 +242,82 @@ main{
     margin: 100px;
 }
 /* -----------Register Page------------ */
-/* .register{
-    width: 100%;
-    height: 90%; 
-} */
-#registration-form{
-    width: 300px;
-    margin:auto;
-}
-#registration-form h2{
-    text-decoration: underline;
-    margin: 50px 0;
-}
-#registration-form input,#registration-form textarea,#registration-form select{
-    width: 300px;
-    height: 40px;
-    /* margin: 10px 0; */
+ /* Form container */
+ form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
     border-radius: 5px;
-    text-decoration: none;
-    outline: none;
-}
-.submit-btn{
-    margin-top: 30px;
-    width: 150px !important;
-    color: rgb(50, 23, 23);
-    font-weight: bolder;
-    background-color: rgb(43, 255, 0);
-    opacity: 0.9; 
-}
-.submit-btn:hover{
-   opacity: 1;
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Form title */
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  /* Form fields */
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+
+  form textarea {
+    height: 80px;
+  }
+
+  form select {
+    height: 38px;
+  }
+
+
+  /* Submit button */
+  form .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  form .submit-btn:hover {
+    background-color: #45a049;
+  }
+
+  /* checkbox */
+  .checkbox-group div {
+    display: flex;
+    margin-right: 20px;
+  }
+  .checkbox-group div label{
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 /* ---------------thank you page--------------------- */
 .thankyou{
     width: 100%;

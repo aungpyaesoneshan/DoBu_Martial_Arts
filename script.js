@@ -7,8 +7,28 @@ $(document).ready(function() {
   hideAndShow();
   // submit form
   submitForm();
-});
+  // Define the data for autocomplete
+  var availableTags = [
+    "Classes",
+    "Instructors",
+    "About Us",
+    "Contact Us",
+    "Site Map",
+    "Privacy and Policy",
+    "Judo",
+    "Karate",
+    "Jiu-Jitsu",
+    "Muay Thai",
+    "Class schedule",
+    "Prices and membership options"
+  ];
 
+  // Initialize the autocomplete
+  $("#search").autocomplete({
+    source: availableTags
+  });
+});
+// hide and show divs
 const hideAndShow = () => {
   $(".link").click(function(e) {
     e.preventDefault();
@@ -22,6 +42,23 @@ const hideAndShow = () => {
   });
 }
 
+// const hideAndShow = () => {
+//   const links = document.querySelectorAll(".link");
+//   const contents = document.querySelectorAll(".content");
+
+//   links.forEach((link) => {
+//     link.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       const targetDiv = link.getAttribute("data-target");
+
+//       contents.forEach((content) => {
+//         content.style.display = "none";
+//       });
+
+//       document.getElementById(targetDiv).style.display = "block";
+//     });
+//   });
+// };
 
 // submit form
 const submitForm = () => {
@@ -35,7 +72,9 @@ const submitForm = () => {
     var gender = $("#gender").val();
     var phone = $("#phone").val();
     var address = $("#address").val();
-    var classOption = $("#class").val();
+    var classOption = $("input[name='class[]']:checked").map(function() {
+      return $(this).val();
+    }).get();
 
     // Create JSON object
     var formData = {
@@ -48,30 +87,30 @@ const submitForm = () => {
       classOption: classOption
     };
 // form validator
-    if (name === ''||!(isNaN(name))) {
-      alert("Name is required and should not include character");
-      return ;
-    }
-    
-    if (isNaN(age) || age < 5) {
-      alert("Invalid age. Age must be a number and greater than 5");
-      return ;
-    }
-    
-    if (gender === '') {
-      alert("Gender is required");
-      return ;
-    }
-    
-    if (isNaN(phone)) {
-      alert("Phone number must contain only numbers");
-      return ;
-    }
-    
-    if (classOption === '') {
-      alert("Class option is required");
-      return ;
-    }
+if (name === '' || !(isNaN(name))) {
+  alert("Name is required and should not include characters");
+  return;
+}
+
+if (isNaN(age) || age < 5) {
+  alert("Invalid age. Age must be a number and greater than 5");
+  return;
+}
+
+if (gender === '') {
+  alert("Gender is required");
+  return;
+}
+
+if (isNaN(phone) || phone.length < 9) {
+  alert("Phone number must contain only numbers and the length should be 9 digits");
+  return;
+}
+
+if (classOption === null||classOption.length === 0) {
+  alert("Please select at least one class");
+  return;
+}
 
     // Retrieve existing form data from localStorage
     var existingData = JSON.parse(localStorage.getItem("formData")) || [];
@@ -114,24 +153,24 @@ var myCarousel = document.querySelector('#myCarousel');
     // Additional options can be added here
   });
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-   (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+// // Example starter JavaScript for disabling form submissions if there are invalid fields
+//    (function() {
+//     'use strict';
+//     window.addEventListener('load', function() {
+//       // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//       var forms = document.getElementsByClassName('needs-validation');
+//       // Loop over them and prevent submission
+//       var validation = Array.prototype.filter.call(forms, function(form) {
+//         form.addEventListener('submit', function(event) {
+//           if (form.checkValidity() === false) {
+//             event.preventDefault();
+//             event.stopPropagation();
+//           }
+//           form.classList.add('was-validated');
+//         }, false);
+//       });
+//     }, false);
+//   })();
 
   
   

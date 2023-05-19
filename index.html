@@ -35,10 +35,11 @@
                 <li><a class="link" href="#" data-target="registration-form">Register</a></li>
             </ul>
         </div>
-            <div class="input-group w-25 register_search">
-                <input type="text" class="form-control" placeholder="">
-                <button class="btn btn-light" type="submit">Search</button>
-              </div>
+        <div class="register_search">
+          <input type="text" id="search" class="search-input" placeholder="">
+          <button id="searchBtn" class="search-button">Search</button>
+        </div>
+        
     </header>
     <main>
         <!-- Main -->
@@ -138,37 +139,55 @@
           <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="Images/instructors/i1.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Name : Mauricio Gomez<br>
+                Job : Gym owner / Head martial arts coach <br>
+                Details : Coaches in all martial arts/4th Dan Blackbelt judo/3ed Dan Blackbelt jiu-jitsu/1st Dan blackbelt karate/ Accredited Muay Thai coach
+                </p>
               </div>
             </div> 
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="Images/instructors/i2.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Name : Sarah Nova<br>
+                  Job : Assistant martial arts coach<br>
+                  Details : 5th Dan karate
+                </p>
               </div>
             </div> 
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="Images/instructors/i3.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Name : Guy Victory<br>
+                  Job : Assistant martial arts coach <br>
+                  Details : 2nd Dan Blackbelt jiu-jitsu/1st Dan Blackbelt judo
+                </p>
               </div>
             </div> 
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="Images/instructors/i4.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Name : Morris Davis<br>
+                  Job : Assistant martial arts coach <br>
+                  Details : Accredited Muay Thai coach/3rd Dan Blackbelt karate
+                </p>
               </div>
             </div> 
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="Images/instructors/i5.jpg" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Name : Tracu Santiago<br>
+                  Job : Fitness coach <br>
+                  Details : BSc in Sports Science/Qualified in health and nutrition/Specialises in devising strength and conditioning programs for combat athletes
+                </p>
               </div>
             </div> 
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="Images/instructors/i6.webp" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Name : Harpreet Kaur<br>
+                  Job : Fitness Coach <br>
+                  Details : BSc in Physiotherapy/MSc in Sports Science
+                </p>
               </div>
             </div>
          </div>
@@ -191,7 +210,7 @@
             <li><strong>Address:</strong> 123 Main Street, City, State, ZIP</li>
           </ul>  
         </div>
-          <form class="needs-validation contactus_form" novalidate>
+          <!-- <form class="needs-validation contactus_form" novalidate>
               <h2>Contact Us</h2>
               <div class="form-row">
                 <div class="col-md-4 mb-3 w-100">
@@ -214,7 +233,7 @@
                 </div>
               </div>
               <button class="btn btn-primary contactus-btn" type="submit">Submit form</button>
-            </form>
+            </form> -->
       </div>
        </div>
     <!-- Privacy and Policy -->
@@ -398,52 +417,66 @@
     </div>
     <!-- Register page -->
    
-         <!-- Register Form -->
-      <form id="registration-form" class="content">
-        <h2>Registration Form</h2>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" required>
-        </div>
-        <div>
-          <label for="gender">Gender:</label>
-          <select id="gender" name="gender" required>
-            <option value="">Select Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div>
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div>
-          <label for="address">Address:</label>
-          <textarea id="address" name="address" required></textarea>
-        </div>
-        <div>
-          <label for="class">Class:</label>
-          <select id="class" name="class" multiple required>
-            <option value="Judo">Judo</option>
-            <option value="Karate">Karate</option>
-            <option value="Jiu-Jitsu">Jiu-Jitsu</option>
-            <option value="Muay Thai">Muay Thai</option>
+<!-- Register Form -->
 
-          </select>
+  <form id="registration-form" class="content">
+    <h2>Registration Form</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+    </div>
+    <div>
+      <label for="class">Class:</label>
+      <div class="checkbox-group" id="class">
+        <div>
+          <input type="checkbox" id="judo" name="class[]" value="Judo">
+          <label for="judo">Judo</label>
         </div>
         <div>
-          <input class="submit-btn" type="submit" value="Register">
+          <input type="checkbox" id="karate" name="class[]" value="Karate">
+          <label for="karate">Karate</label>
         </div>
-      </form>
+        <div>
+          <input type="checkbox" id="jiujitsu" name="class[]" value="Jiu-Jitsu">
+          <label for="jiujitsu">Jiu-Jitsu</label>
+        </div>
+        <div>
+          <input type="checkbox" id="muaythai" name="class[]" value="Muay Thai">
+          <label for="muaythai">Muay Thai</label>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <input class="submit-btn" type="submit" value="Register">
+    </div>
+  </form>
+
       <!-- Thank you page -->
       <div class="thankyou content" id="thankyou">
         <h2>Thank You!</h2>
