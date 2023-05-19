@@ -106,7 +106,7 @@ const submitForm = () => {
 // bootstrap carousel config
 var myCarousel = document.querySelector('#myCarousel');
   var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 3000, // Set the desired interval in milliseconds (e.g., 5000 for 5 seconds)
+    interval: 5000, // Set the desired interval in milliseconds (e.g., 5000 for 5 seconds)
     wrap: true,     // Enable carousel looping
     pause: false,   // Disable pausing on hover
     touch: false,   // Disable sliding on touch gestures
