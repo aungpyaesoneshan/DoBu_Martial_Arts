@@ -10,8 +10,10 @@
     <script src="scriptForAdmin.js"></script>
 </head>
 <body>
-  <div id="registration-form">
-    <h2>Local Storage CRUD APP</h2>
+  <!-- Register Form -->
+
+  <form id="registration-form" class="content">
+    <h2>Admin CRUD APP</h2>
     <div>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -43,20 +45,30 @@
     </div>
     <div>
       <label for="class">Class:</label>
-      <select id="class" name="class" required>
-        <option value="">Select Class</option>
-        <option value="Judo">Judo</option>
-        <option value="Karate">Karate</option>
-        <option value="Jiu-Jitsu">Jiu-Jitsu</option>
-        <option value="Muay Thai">Muay Thai</option>
-
-      </select>
+      <div class="checkbox-group" id="class">
+        <div>
+          <input type="checkbox" id="judo" name="class[]" value="Judo">
+          <label for="judo">Judo</label>
+        </div>
+        <div>
+          <input type="checkbox" id="karate" name="class[]" value="Karate">
+          <label for="karate">Karate</label>
+        </div>
+        <div>
+          <input type="checkbox" id="jiujitsu" name="class[]" value="Jiu-Jitsu">
+          <label for="jiujitsu">Jiu-Jitsu</label>
+        </div>
+        <div>
+          <input type="checkbox" id="muaythai" name="class[]" value="Muay Thai">
+          <label for="muaythai">Muay Thai</label>
+        </div>
+      </div>
     </div>
+    
     <div>
-      <!-- <button id="register-btn" onclick="createData()">Register</button> -->
-      <button id="update-btn" onclick="createData()">Update</button>
+      <input id="update-btn" onclick="createData()" class="submit-btn" type="submit" value="Register">
     </div>
-  </div>
+</form>
   <br>
     <div id="data-display">
         <table class="data-table">
