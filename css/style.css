@@ -11,9 +11,9 @@ a:hover{
     color: rgb(13, 255, 0);
 }
 /* TO hide divs or some */
-/* .content {
+.content {
     display: none ;
-  } */
+  }
   
 /* ----------------------------------------This is header nav bar section and includes logo, menu, register and search */
 header{
@@ -246,8 +246,8 @@ main{
 /* -----------Register Page------------ */
  /* Form container */
  form {
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 5px;
