@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
   // hide and show div
-  hideAndShow();
+  // hideAndShow();
   // submit form
   submitForm();
   // Define the data for autocomplete
@@ -29,18 +29,18 @@ $(document).ready(function() {
   });
 });
 // hide and show divs
-const hideAndShow = () => {
-  $(".link").click(function(e) {
-    e.preventDefault();
-    var targetDiv = $(this).data("target");
+// const hideAndShow = () => {
+//   $(".link").click(function(e) {
+//     e.preventDefault();
+//     var targetDiv = $(this).data("target");
     
-    // Hide all divs with animation
-    $(".content").fadeOut("slow");
+//     // Hide all divs with animation
+//     $(".content").fadeOut("slow");
     
-    // Show the target div with animation
-    $("#" + targetDiv).fadeIn("slow");
-  });
-}
+//     // Show the target div with animation
+//     $("#" + targetDiv).fadeIn("slow");
+//   });
+// }
 
 // const hideAndShow = () => {
 //   const links = document.querySelectorAll(".link");
@@ -135,7 +135,10 @@ if (classOption === null||classOption.length === 0) {
   });
 
   $(".submit-btn").click(function() {
-    $("#registration-form").submit(); // Trigger form submission
+    $("#registration-form").submit(function(e){
+      // Redirect to the target page
+      window.location.href = $(this).attr("action");
+    }); // Trigger form submission
   });
 }
 
